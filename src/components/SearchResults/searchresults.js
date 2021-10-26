@@ -1,5 +1,6 @@
-import React, {Component} from 'react'
-import MovieCard from '../MovieCard/moviecard'
+import React, {Component} from 'react';
+import MovieCard from '../MovieCard/moviecard';
+import { Link } from "react-router-dom";
 
 
 class SearchResults extends Component {
@@ -17,8 +18,11 @@ class SearchResults extends Component {
     }
 
     render(){
-        return <div className='results'>
+        return <div className='searchedPage'>
+            <Link to="/"><button>Go Home</button></Link>
+            <div className='moviesDisplay'>
             {this.state.movies.map(movie => <MovieCard key={movie.id} movie={movie}/> )}
+            </div>
         </div>
     }   
 }

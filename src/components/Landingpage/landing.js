@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import MovieCard from '../MovieCard/moviecard';
+import Search from '../Search/search';
 import Logo from '../../assets/logo.png';
 
 import '../../App.css';
@@ -25,6 +26,7 @@ class Homepage extends Component {
         return(
             <div className='landingPage'>
                 <img src={Logo}/>
+                <Search/>
                 <div className='moviesDisplay'>
                     {this.state.movies.map(movie =>  <MovieCard key={movie.id} movie={movie}/>)}
                 </div>

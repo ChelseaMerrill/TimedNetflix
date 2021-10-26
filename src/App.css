@@ -1,5 +1,5 @@
 .landingPage{
-  max-width: 1200px;
+  max-width: 1500px;
   margin: auto;
 }
 
@@ -7,4 +7,19 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.singlePage{
+  max-width: 800px;
+  margin: auto;
+}
+
+.singleMovie{
+  margin: 10px;
+}
+
+.underImage{
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
 }
