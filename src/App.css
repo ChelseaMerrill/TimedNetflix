@@ -1,1 +1,10 @@
+.landingPage{
+  max-width: 1200px;
+  margin: auto;
+}
 
+.moviesDisplay{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
